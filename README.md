@@ -55,6 +55,9 @@ This automatically starts the local React dev server, Zero server, Hono API, and
 
 **Note:** For your first deploy it can take up to 15 minutes for the postgres database to be ready.
 
+**Note:** When running in dev mode you can not currently see the Zero cache server in the dev pane, This is an SST thing, iv already complained to dax, please do so too.
+
+
 
 ### Deploying to AWS
 

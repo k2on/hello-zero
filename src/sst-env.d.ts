@@ -3,8 +3,8 @@
 /* eslint-disable */
 /// <reference types="vite/client" />
 interface ImportMetaEnv {
-  readonly HONO_SERVER: string
-  readonly ZERO_SERVER: string
+  readonly VITE_HONO_SERVER: string
+  readonly VITE_ZERO_SERVER: string
 }
 interface ImportMeta {
   readonly env: ImportMetaEnv

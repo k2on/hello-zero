@@ -9,6 +9,7 @@
     "dev:db-down": "docker compose --env-file .env -f ./docker/docker-compose.yml down",
     "dev:db-up": "docker compose --env-file .env -f ./docker/docker-compose.yml up",
     "dev:ui": "vite",
+    "dev:frontend": " vite",
     "dev:zero-cache": "zero-cache-dev -p src/schema.ts",
     "lint": "eslint ."
   },

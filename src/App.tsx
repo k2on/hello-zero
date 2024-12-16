@@ -8,9 +8,11 @@ import { randInt } from "./rand";
 import { useInterval } from "./use-interval";
 import { formatDate } from "./date";
 
+
+
 function App() {
+  console.log("z", import.meta.env);
   const z = useZero<Schema>();
-  console.log("z", z);
   const [users] = useQuery(z.query.user);
   const [mediums] = useQuery(z.query.medium);
 
@@ -99,7 +101,7 @@ function App() {
 
   const toggleLogin = async () => {
     if (z.userID === "anon") {
-      await fetch(import.meta.env.HONO_SERVER + "/api/login");
+      await fetch(import.meta.env.VITE_HONO_SERVER ? import.meta.env.VITE_HONO_SERVER: '' + "/api/login");
     } else {
       Cookies.remove("jwt");
     }

@@ -103,17 +103,17 @@ export default $config({
     const site = new sst.aws.StaticSite('HostedSite', {
       path: './',
       environment: {
-        HONO_SERVER: honoFunction.url,
-        ZERO_SERVER: service.url,
+        VITE_HONO_SERVER: honoFunction.url,
+        VITE_ZERO_SERVER: service.url,
       },
       build: {
         command: "npm run build",
         output: "dist",
       },
       dev: {
-        command: "npm run dev:ui",
+        command: "npm run dev:frontend",
         url: "http://localhost:5173",
-        
+        directory: './src',
       }
     });
 
