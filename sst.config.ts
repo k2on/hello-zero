@@ -104,7 +104,7 @@ export default $config({
       path: './',
       environment: {
         HONO_SERVER: honoFunction.url,
-        ZERO_SERVER: service.url,
+        VITE_ZERO_SERVER: service.url,
       },
       build: {
         command: "npm run build",
